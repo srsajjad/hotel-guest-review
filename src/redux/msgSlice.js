@@ -22,6 +22,12 @@ export const msgSlice = createSlice({
       const { id, reviewMsg } = action.payload;
       const which = state.findIndex(x => x.id == id);
       state[which].reviewMsg = reviewMsg;
+    },
+
+    updateSent: (state, action) => {
+      const { id, sent } = action.payload;
+      const which = state.findIndex(x => x.id == id);
+      state[which].sent = sent;
     }
   }
 });

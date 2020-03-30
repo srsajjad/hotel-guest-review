@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import EditDialog from "../edit-dialog/EditDialog";
+import { msgSlice } from "../../redux/msgSlice";
 import "./Listing.css";
 
 const Listing = props => {
-  const { listing, sent, message, review, reviewMsg, id } = props;
+  const { listing, sent, message, review, reviewMsg, id, updateSent } = props;
 
   const [showSmallPopup, setShowSmallPopup] = useState(false);
   const [open, setOpen] = useState(false);
@@ -17,18 +19,20 @@ const Listing = props => {
   };
 
   const handleDisable = () => {
-    setOpen(true);
+    // setOpen(true);
   };
 
   const handleSend = () => {
+    updateSent({ id, sent: true });
     alert("Message Sent !");
+    setShowSmallPopup(false);
   };
 
   return (
     <div>
       <div className="listing-status">
         <p>Status: {sent ? "Sent" : "Not Sent Yet"}</p>
-        <p>{listing}</p>
+        <p>Listing: {listing}</p>
       </div>
 
       <button
@@ -61,4 +65,10 @@ const Listing = props => {
   );
 };
 
-export default Listing;
+const updateSent = msgSlice.actions.updateSent;
+
+const mapDispatchToProps = dispatch => ({
+  updateSent: payload => dispatch(updateSent(payload))
+});
+
+export default connect(null, mapDispatchToProps)(Listing);
