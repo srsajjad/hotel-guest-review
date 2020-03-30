@@ -1,0 +1,44 @@
+.manage-btn {
+  width: 6rem;
+  height: 2rem;
+  background: white;
+  border: 1px solid orange;
+  color: orange;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  position: relative;
+}
+
+.orange-btn {
+  color: white;
+  background: orange;
+}
+
+.manage-btn:focus {
+  outline: none;
+}
+
+.floating-box {
+  position: absolute;
+  top: -152px;
+  left: 0;
+  border: 1px solid slateblue;
+  margin: 0px;
+  height: 150px;
+  background: white;
+  width: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  color: orange;
+}
+
+.listing-status {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
