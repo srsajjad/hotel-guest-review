@@ -89,6 +89,7 @@ function EditDialog(props) {
             overflow: "auto"
           }}
         >
+          <h4>Write A Message to the Guest</h4>
           <TextareaAutosize
             aria-label="minimum height"
             rowsMin={3}
@@ -98,6 +99,7 @@ function EditDialog(props) {
             style={{ marginBottom: "2rem" }}
           />
 
+          <h4>Write A Review</h4>
           <TextareaAutosize
             aria-label="minimum height"
             rowsMin={3}
@@ -111,7 +113,7 @@ function EditDialog(props) {
             value={localReview}
             onChange={e => setLocalReview(e.target.value)}
             id="standard-number"
-            label="Number"
+            label="Guest Review (1-5)"
             type="number"
             inputProps={{ min: "1", max: "5", step: "1" }}
             InputLabelProps={{
