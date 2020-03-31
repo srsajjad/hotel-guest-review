@@ -1,5 +1,5 @@
 import React from "react";
-import MsgBox from "../msgbox/MsgBox";
+import Skeleton from "../skeleton/Skeleton";
 import { connect } from "react-redux";
 
 const Dashboard = props => {
@@ -11,7 +11,7 @@ const Dashboard = props => {
         .slice()
         .sort((a, b) => Number(b.checkoutDate) - Number(a.checkoutDate))
         .map((msg, i) => (
-          <MsgBox key={i} msg={msg} />
+          <Skeleton key={i} msg={msg} serial={i} />
         ))}
     </div>
   );

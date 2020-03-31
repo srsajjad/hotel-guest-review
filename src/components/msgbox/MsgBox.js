@@ -2,35 +2,20 @@ import React from "react";
 import Message from "../message/Message";
 import Review from "../review/Review";
 import Listing from "../listing/Listing";
-import dayjs from "dayjs";
 import "./MsgBox.css";
 
 const MsgBox = props => {
-  const { msg } = props;
-  const {
-    message,
-    review,
-    reviewMsg,
-    name,
-    checkoutDate,
-    sent,
-    isDisabled,
-    listing,
-    id
-  } = msg;
-
-  // day JS operations
-  const d = dayjs.unix(checkoutDate);
-  const am = d.format("A");
-  const mnt = d.format("mm");
-  const day = d.format("D");
-  const hour = d.format("h");
-  const month = d.format("MMM");
-  const dayName = d.format("ddd");
-  const time = `${dayName}, ${month} ${day} at ${hour}:${mnt} ${am}`;
+  const { msg, serial } = props;
+  const { message, review, reviewMsg, sent, isDisabled, listing, id } = msg;
 
   return (
-    <div className="msg-box">
+    <div
+      style={{
+        transform:
+          serial % 2 == 0 ? `translate(7%, -10%)` : `translate(-107%, -10%)`
+      }}
+      className="msg-box"
+    >
       <Message message={message} />
       <Review review={review} reviewMsg={reviewMsg} />
       <Listing
