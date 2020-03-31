@@ -9,6 +9,7 @@
   border-radius: 4px;
   font-size: 1rem;
   position: relative;
+  align-self: center;
 }
 
 .orange-btn {
@@ -42,6 +43,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+}
+
+.listing-sec::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 200%;
+  height: 1px;
+  background: #d0d0d0;
 }
 
 .listing-status {
