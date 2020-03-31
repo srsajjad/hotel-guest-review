@@ -1,5 +1,6 @@
 .manage-btn {
   width: 6rem;
+  width: 20%;
   height: 2rem;
   background: white;
   border: 1px solid orange;
@@ -37,8 +38,32 @@
   color: orange;
 }
 
+.listing-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .listing-status {
   display: flex;
-  justify-content: space-evenly;
+  width: 78%;
+  justify-content: space-between;
   align-items: center;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.listing-status span {
+  color: #929292cc;
+  font-size: 10px;
+}
+
+.listing-status p:nth-child(1) {
+  width: 40%;
+}
+
+.listing-status p:nth-child(2) {
+  width: 52%;
+  border-left: 1.3px solid #c1b5b5;
+  padding-left: 7px;
 }

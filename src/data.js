@@ -4,7 +4,7 @@ export const data = [
     name: "Martin",
     review: "4",
     reviewMsg:
-      "What a great guest. Would be happyt to host Martin again anytime",
+      "What a great guest. Would be happyt to host Martin again anytime.",
     checkoutDate: "1585151401",
     sent: false,
     isDisabled: false,
@@ -24,7 +24,7 @@ export const data = [
     name: "Pavel",
     review: "5",
     reviewMsg:
-      "What a great guest. Would be happyt to host Pavel again anytime",
+      "What a great guest. Would be happyt to host Pavel again anytime.",
     checkoutDate: "1586923200",
     sent: false,
     isDisabled: false,
@@ -43,7 +43,7 @@ export const data = [
     name: "John",
     listing: "Royal Suite",
     review: "2",
-    reviewMsg: "Not a good guest",
+    reviewMsg: "Not a good guest.",
     checkoutDate: "1586533801",
     sent: false,
     isDisabled: false,

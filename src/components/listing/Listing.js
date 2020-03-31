@@ -39,10 +39,16 @@ const Listing = props => {
   // }, []);
 
   return (
-    <div>
+    <div className="listing-sec">
       <div className="listing-status">
-        <p>Status: {sent ? "Sent" : "Not Sent Yet"}</p>
-        <p>Listing: {listing}</p>
+        <p>
+          <span>STATUS:</span>
+          <br /> {sent ? "Sent" : "Not Sent Yet"}
+        </p>
+        <p>
+          <span>LISTING:</span>
+          <br /> {listing}
+        </p>
       </div>
 
       <button
