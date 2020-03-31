@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import EditDialog from "../edit-dialog/EditDialog";
+import EditIcon from "@material-ui/icons/Edit";
 import { msgSlice } from "../../redux/msgSlice";
+import SendIcon from "@material-ui/icons/Send";
 import "./Listing.css";
 
 const Listing = props => {
@@ -62,10 +64,17 @@ const Listing = props => {
       >
         {showSmallPopup && (
           <ul onClick={e => e.stopPropagation()} className="floating-box">
-            <li onClick={handleEditMessage}>Eidt Message</li>
-            <li onClick={handleEditReview}>Edit Review</li>
-            <li onClick={handleDisable}>Disable</li>
-            <li onClick={handleSend}>Send Now</li>
+            <li onClick={handleEditMessage}>
+              <EditIcon /> Eidt Message
+            </li>
+            <li onClick={handleEditReview}>
+              <EditIcon /> Edit Review
+            </li>
+            {/* <li onClick={handleDisable}>Disable</li> */}
+            <li onClick={handleSend}>
+              {" "}
+              <SendIcon /> Send Now
+            </li>
           </ul>
         )}
         Manage
