@@ -9,7 +9,7 @@ const Dashboard = props => {
     <div>
       {msgReducer
         .slice()
-        .sort((a, b) => Number(b.checkoutDate) - Number(a.checkoutDate))
+        .sort((a, b) => Number(a.checkoutDate) - Number(b.checkoutDate))
         .map((msg, i) => (
           <Skeleton key={i} msg={msg} serial={i} />
         ))}

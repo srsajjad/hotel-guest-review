@@ -5,7 +5,7 @@ export const data = [
     review: "4",
     reviewMsg:
       "What a great guest. Would be happyt to host Martin again anytime.",
-    checkoutDate: "1585151401",
+    checkoutDate: "1586923200",
     sent: false,
     isDisabled: false,
     listing: "Luxurious Apartmant",
@@ -25,7 +25,7 @@ export const data = [
     review: "5",
     reviewMsg:
       "What a great guest. Would be happyt to host Pavel again anytime.",
-    checkoutDate: "1586923200",
+    checkoutDate: "1586533801",
     sent: false,
     isDisabled: false,
     listing: "Family Suite",
@@ -44,12 +44,31 @@ export const data = [
     listing: "Royal Suite",
     review: "2",
     reviewMsg: "Not a good guest.",
-    checkoutDate: "1586533801",
+    checkoutDate: "1586743200",
     sent: false,
     isDisabled: false,
     message: `Hey John,
 
     Never come again !
+
+    Regards,
+    Lenka
+    `
+  },
+
+  {
+    id: 1,
+    name: "Lisa",
+    review: "5",
+    reviewMsg:
+      "What a great guest. Would be happyt to host Lisa again anytime.",
+    checkoutDate: "1585267200",
+    sent: true,
+    isDisabled: false,
+    listing: "Executive Suite",
+    message: `Hey Lisa,
+
+    This was really nice having you. Thanks for being such a good guest. Hope to see you next time.
 
     Regards,
     Lenka

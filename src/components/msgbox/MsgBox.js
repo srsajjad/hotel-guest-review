@@ -14,7 +14,7 @@ const MsgBox = props => {
         transform:
           serial % 2 == 0 ? `translate(7%, -10%)` : `translate(-107%, -10%)`
       }}
-      className="msg-box"
+      className={`msg-box ${sent && "msg-sent"}`}
     >
       <Message message={message} />
       <Review review={review} reviewMsg={reviewMsg} />

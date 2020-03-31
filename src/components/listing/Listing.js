@@ -61,6 +61,8 @@ const Listing = props => {
         variant="outlined"
         color="orange"
         className={`manage-btn ${showSmallPopup && "orange-btn"}`}
+        disabled={!!sent}
+        style={{ cursor: sent ? "not-allowed" : "pointer" }}
       >
         {showSmallPopup && (
           <ul onClick={e => e.stopPropagation()} className="floating-box">
