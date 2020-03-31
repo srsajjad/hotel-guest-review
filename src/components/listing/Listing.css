@@ -12,6 +12,12 @@
   align-self: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .manage-btn {
+    width: 30%;
+  }
+}
+
 .orange-btn {
   color: white;
   background: orange;

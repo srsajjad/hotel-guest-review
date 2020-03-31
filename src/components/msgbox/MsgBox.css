@@ -2,7 +2,8 @@
   padding: 1.5rem;
   padding-bottom: 0;
   padding-top: 0.5rem;
-  width: 400px;
+  max-width: 400px;
+  min-width: 200px;
   border: 1px solid #d2d2d2;
   background: white;
   font-size: 12px;
@@ -15,4 +16,10 @@
 
 .msg-sent {
   background: #efeff0;
+}
+
+@media only screen and (max-width: 550px) {
+  .msg-box {
+    width: 80%;
+  }
 }

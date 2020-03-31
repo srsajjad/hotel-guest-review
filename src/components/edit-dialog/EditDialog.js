@@ -75,6 +75,8 @@ function EditDialog(props) {
         onClose={handleDiscard}
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
+        maxWidth="xl"
+        fullWidth={true}
       >
         <DialogTitle id="alert-dialog-slide-title">
           Manage Review and Feedback
@@ -93,6 +95,7 @@ function EditDialog(props) {
             placeholder="Write A Message"
             value={localMessage}
             onChange={e => setLocalMessage(e.target.value)}
+            style={{ marginBottom: "2rem" }}
           />
 
           <TextareaAutosize
@@ -101,6 +104,7 @@ function EditDialog(props) {
             placeholder="Write A Review"
             value={localReviewMsg}
             onChange={e => setLocalReviewMsg(e.target.value)}
+            style={{ marginBottom: "2rem" }}
           />
 
           <TextField
@@ -113,6 +117,7 @@ function EditDialog(props) {
             InputLabelProps={{
               shrink: true
             }}
+            style={{ marginBottom: "1rem" }}
           />
         </DialogContent>
 

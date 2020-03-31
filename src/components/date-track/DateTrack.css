@@ -1,0 +1,10 @@
+.date-track {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.date-track .time {
+  font-size: 11px;
+  line-height: 3px;
+  color: rgba(0, 0, 0, 0.51);
+}
