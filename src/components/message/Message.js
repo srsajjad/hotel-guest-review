@@ -1,11 +1,11 @@
 import React from "react";
-import ReactHtmlParser from "react-html-parser";
-import snarkdown from "snarkdown";
+// import ReactHtmlParser from "react-html-parser";
+// import snarkdown from "snarkdown";
 
 const Message = props => {
   const { message } = props;
 
-  return <div>{ReactHtmlParser(snarkdown(message))}</div>;
+  return <pre>{message}</pre>;
 };
 
 export default Message;

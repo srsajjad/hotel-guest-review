@@ -3,6 +3,7 @@ import Message from "../message/Message";
 import Review from "../review/Review";
 import Listing from "../listing/Listing";
 import dayjs from "dayjs";
+import "./MsgBox.css";
 
 const MsgBox = props => {
   const { msg } = props;
@@ -29,7 +30,7 @@ const MsgBox = props => {
   const time = `${dayName}, ${month} ${day} at ${hour}:${mnt} ${am}`;
 
   return (
-    <div style={{ paddingBottom: "10px" }}>
+    <div className="msg-box">
       <Message message={message} />
       <Review review={review} reviewMsg={reviewMsg} />
       <Listing

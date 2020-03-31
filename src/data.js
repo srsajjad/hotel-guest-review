@@ -12,7 +12,6 @@ export const data = [
     message: `Hey Martin,
     
     This was really nice having you. Thanks for being such a good guest.
-
     Hope to see you nex time.
 
     Regards,
@@ -31,10 +30,8 @@ export const data = [
     isDisabled: false,
     listing: "Family Suite",
     message: `Hey Pavel,
-    
-    This was really nice having you. Thanks for being such a good guest.
 
-    Hope to see you nex time.
+    This was really nice having you. Thanks for being such a good guest. Hope to see you nex time.
 
     Regards,
     Lenka
@@ -51,7 +48,7 @@ export const data = [
     sent: false,
     isDisabled: false,
     message: `Hey John,
-    
+
     Never come again !
 
     Regards,

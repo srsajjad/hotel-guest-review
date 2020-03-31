@@ -1,0 +1,11 @@
+.msg-box {
+  padding: 1.5rem;
+  width: 400px;
+  border: 1px solid #d2d2d2;
+  background: #efeff0;
+  font-size: 12px;
+}
+
+.msg-box pre {
+  white-space: pre-line;
+}

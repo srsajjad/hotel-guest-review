@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import EditDialog from "../edit-dialog/EditDialog";
 import { msgSlice } from "../../redux/msgSlice";
@@ -28,6 +28,16 @@ const Listing = props => {
     setShowSmallPopup(false);
   };
 
+  // useEffect(() => {
+  //   function closePopup() {
+  //     setShowSmallPopup(false);
+  //   }
+
+  //   document.body.addEventListener("click", closePopup);
+
+  //   return () => document.body.removeEventListener("click", closePopup);
+  // }, []);
+
   return (
     <div>
       <div className="listing-status">
@@ -36,7 +46,10 @@ const Listing = props => {
       </div>
 
       <button
-        onClick={() => setShowSmallPopup(!showSmallPopup)}
+        onClick={e => {
+          e.stopPropagation();
+          setShowSmallPopup(!showSmallPopup);
+        }}
         variant="outlined"
         color="orange"
         className={`manage-btn ${showSmallPopup && "orange-btn"}`}
